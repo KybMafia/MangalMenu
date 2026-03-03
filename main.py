@@ -83,7 +83,7 @@ doc.addPageTemplates([first_template, later_template])
 story = []
 story.append(NextPageTemplate("Later"))
 # ─── Заполнение меню ──────────────────────────────────────────────────────────
-story.append(Paragraph("Содержание1:", main_title_style))
+story.append(Paragraph("Содержание:", main_title_style))
 
 FRAME_WIDTH = A4[0] - 40
 rows = []
