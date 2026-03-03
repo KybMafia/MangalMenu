@@ -136,5 +136,9 @@ for section in sections:
         story.append(item_table)
 
 # ─── Генерация PDF ────────────────────────────────────────────────────────────
+doc.title = "Меню ресторана"
+doc.author = "Мангал"
+doc.subject = "Основное меню"
+doc.creator = "Mangal"
 doc.build(story)
 print(f"Создан: {OUTPUT_FILE}")
