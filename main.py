@@ -21,7 +21,7 @@ blue_list = ['Завтраки', 'Первые блюда', 'Вторые блю
 BG_COLOR = colors.HexColor("#000000")
 TEXT_COLOR = colors.HexColor("#ffffff")
 BLUE_LINK_COLOR = colors.HexColor("#4ABFC8")
-RED_LINK_COLOR = colors.HexColor("#d53128")
+RED_LINK_COLOR = colors.HexColor("#dc2b19")
 # ─── Стили ────────────────────────────────────────────────────────────────────
 main_title_style = ParagraphStyle(
     "DocTitle", fontName="Menu", fontSize=40, leading=60, alignment=1, textColor=TEXT_COLOR)
@@ -65,7 +65,7 @@ def make_dotted_line(name, price, font_name, font_size):
 
 
 def make_toc_link(section):
-    color = "#4ABFC8" if section["title"] in blue_list else "#d53128"
+    color = "#4ABFC8" if section["title"] in blue_list else "#dc2b19"
     style = blue_link_style if section["title"] in blue_list else red_link_style
     return Paragraph(f'<a href="#{section["anchor"]}" color="{color}">{section["title"]}</a>', style)
 
