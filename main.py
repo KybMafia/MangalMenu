@@ -114,7 +114,7 @@ for section in sections:
     #     line = make_dotted_line(item["name"], item["price"], "Menu", 30)
     #     story.append(Paragraph(line, body_style))
 
-    LATER_FRAME_WIDTH = A4[0] - 100
+    LATER_FRAME_WIDTH = A4[0] - 110
     for item in section['menu']:
         row = [[Paragraph(item["name"], body_style), Paragraph(str(item["price"]), body_style)]]
 
